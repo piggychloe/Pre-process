@@ -3,18 +3,22 @@
 The pre-processing pipeline generates a processed .CSV file for data from wearable devices.
 
 Currently, the pipeline is capable of pre-processing raw data from the following devices/formats:
-1. Apple Watch
-2. Fitbit Watch
-3. Garmin Watch
-4. Miband
-5. ECG data stored as a EDF file
-6. Biovotion
-7. Empatica
-8. Data stored as a JSON file
-9. Time series data from ibeat [(Dynamic Time Warping algorithm to align Biomedical Signals of Non Uniform Sampling)](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment)
-
+1. Time series data from ibeat [(Dynamic Time Warping algorithm to align Biomedical Signals of Non Uniform Sampling)](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment)
+2. Apple Watch
+3. Fitbit Watch
+4. Garmin Watch
+5. Miband
+6. ECG data stored as a EDF file
+7. Biovotion
+8. Empatica
+9. Data stored as a JSON file
 
 ### Steps to use the pipeline
+
+#### <ins> Aligning Biomedical Signals </ins>
+
+#### If you want to align biomedical signals of non-uniform sampling, please look into the ['Signal_Alignment'](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment) folder and follow the steps.
+
 
 #### <ins> Data from watches </ins>
 
@@ -47,7 +51,6 @@ Run `Complete - Browse file` file or 'Complete - User path`
 
 4. The processed .csv file will be stored in the current working directory.
 
-
 #### If you prefer using the terminal to run the code, please follow the following steps after you clone the repository:
 
 ```
@@ -69,10 +72,6 @@ python Complete\ -\ Browse\ file.py or python Complete\ -\ User\ path.py
 1. In this notebook, two situations are discussed based on the sample data provided by the Open_mHealth: https://www.openmhealth.org/documentation/#/schema-docs/schema-library.
 
 2. The convertor code may need to be adjusted based on the structure of the actual data.
-
-#### <ins> Aligning Biomedical Signals </ins>
-
-#### If you want to align biomedical signals of non-uniform sampling, please look into the ['Signal_Alignment'](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment) folder and follow the steps.
 
 ### Functions
 
