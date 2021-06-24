@@ -2,7 +2,7 @@
 
 The pre-processing pipeline generates a processed .CSV file for data from wearable devices.
 
-Currently, the pipeline is capable of pre-processing raw data from the following watches:
+Currently, the pipeline is capable of pre-processing raw data from the following devices/formats:
 1. Apple Watch
 2. Fitbit Watch
 3. Garmin Watch
@@ -11,9 +11,12 @@ Currently, the pipeline is capable of pre-processing raw data from the following
 6. Biovotion
 7. Empatica
 8. Data stored as a JSON file
+9. Time series data from ibeat [(Dynamic Time Warping algorithm to align Biomedical Signals of Non Uniform Sampling)](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment)
 
 
 ### Steps to use the pipeline
+
+### <ins> Data from watches </ins>
 
 The pipeline requires the pandas, numpy, pytz, datetime, os, sys, json, rowingdata, mne, and re packages.
 
@@ -59,11 +62,17 @@ Then run the file from terminal using:
 ```
 python Complete\ -\ Browse\ file.py or python Complete\ -\ User\ path.py
 ```
+### <ins> Data stored as a JSON file </ins>
+
 #### If you want to convert a JSON file to a dataframe, please look into the [json_table_convertor.ipynb](./json_table_convertor.ipynb)
 
 1. In this notebook, two situations are discussed based on the sample data provided by the Open_mHealth: https://www.openmhealth.org/documentation/#/schema-docs/schema-library.
 
 2. The convertor code may need to be adjusted based on the structure of the actual data.
+
+### <ins> Aligning Biomedical Signals </ins>
+
+#### If you want to align biomedical signals of non-uniform sampling, please look into the ['Signal_Alignment'](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment) folder and follow the steps.
 
 ### Functions
 
