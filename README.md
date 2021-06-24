@@ -16,7 +16,7 @@ Currently, the pipeline is capable of pre-processing raw data from the following
 
 ### Steps to use the pipeline
 
-### Data from watches (1-8 in the list)
+### <ins> Data from watches </ins>
 
 The pipeline requires the pandas, numpy, pytz, datetime, os, sys, json, rowingdata, mne, and re packages.
 
@@ -62,7 +62,7 @@ Then run the file from terminal using:
 ```
 python Complete\ -\ Browse\ file.py or python Complete\ -\ User\ path.py
 ```
-### Data stored as a JSON file 
+### <ins> Data stored as a JSON file </ins>
 
 #### If you want to convert a JSON file to a dataframe, please look into the [json_table_convertor.ipynb](./json_table_convertor.ipynb)
 
@@ -70,7 +70,7 @@ python Complete\ -\ Browse\ file.py or python Complete\ -\ User\ path.py
 
 2. The convertor code may need to be adjusted based on the structure of the actual data.
 
-### Aligning Biomedical Signals 
+### <ins> Aligning Biomedical Signals </ins>
 
 #### If you want to align biomedical signals of non-uniform sampling, please look into the ['Signal_Alignment'](https://github.com/DigitalBiomarkerDiscoveryPipeline/Pre-process/tree/master/Signal-Alignment) folder and follow the steps.
 
