@@ -13,24 +13,6 @@ Currently, the pipeline is capable of pre-processing raw data from the following
 8. Empatica
 9. Data stored as a JSON file
 
-### Collaborator Repositories: 
-* FLIRT: a repository that assists with preprcessing data, see below repository
-    for instructions: 
-    https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt
-    
-##### FLIRT functions include: 
-    zip_file_path : Receive the path of the zip file containing the data to process
-    flirt.with_.empatica: reads and transforms the Empatica .zip file into features directly. Calculates features for each time window (parameter window_length), and shifts each window by the step size (parameter window_step_size)
-    flirt.reader.empatica.read_acc_file_into_df : reads the ACC sensor modality into a DataFrame
-    flirt.reader.empatica.read_ibi_file_into_df : reads the IBI sensor modality into a DataFrame
-    flirt.reader.empatica.read_eda_file_into_df : reads the EDA sensor modality into a DataFrame
-    flirt.reader.empatica.read_bvp_file_into_df : reads the BVP sensor modality into a DataFrame
-    flirt.reader.empatica.read_hr_file_into_df : reads the HR sensor modality into a DataFrame
-    flirt.reader.empatica.read_temp_file_into_df : reads a temporary file sensor modality into a DataFrame
-    flirt.get_hrv_features: reads and processes data to get HRV features from HRV DataFrame
-    flirt.get_acc_features: reads and processes data to get ACC features from ACC DataFrame
-    flirt.get_eda_features : reads and processes data to get EDA features from EDA DataFrame
-    
 ### Steps to use the pipeline
 
 #### <ins> Aligning Biomedical Signals </ins>
@@ -112,8 +94,6 @@ The pipeline currently uses the following functions.
 | preprocess_empatica | Pre-processing function for empatica, used to obtain values of vitals and frequency rate |
 | add_time_empatica | Add time function for empatica, used to add time for each vital sign |
 | import_json | Receive the path of json files and create a dataframe |
-| FLIRT | a repository that assists with preprcessing data for: Empatica E4 or Holter ECGs
-  https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt|
 
 
 ##### apple functions:
