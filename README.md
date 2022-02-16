@@ -112,8 +112,7 @@ The pipeline currently uses the following functions.
 | preprocess_empatica | Pre-processing function for empatica, used to obtain values of vitals and frequency rate |
 | add_time_empatica | Add time function for empatica, used to add time for each vital sign |
 | import_json | Receive the path of json files and create a dataframe |
-| FLIRT | a repository that assists with preprcessing data for: Empatica E4 or Holter ECGs
-  https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt|
+| [FLIRT] (https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt) | a repository that assists with preprcessing data for: Empatica E4 or Holter ECGs |
 
 
 ##### apple functions:
