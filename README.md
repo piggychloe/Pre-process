@@ -18,21 +18,38 @@ Currently, the pipeline is capable of pre-processing raw data from the following
     for instructions: 
     https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt
     
-#### FLIRT functions include: 
-    zip_file_path : Receive the path of the zip file containing the data to process
-    flirt.with_.empatica: reads and transforms the Empatica .zip file into features directly. 
-    Calculates features for each time window (parameter window_length), and shifts each window 
-    by the step size (parameter window_step_size)
-    flirt.reader.empatica.read_acc_file_into_df : reads the ACC sensor modality into a DataFrame
-    flirt.reader.empatica.read_ibi_file_into_df : reads the IBI sensor modality into a DataFrame
-    flirt.reader.empatica.read_eda_file_into_df : reads the EDA sensor modality into a DataFrame
-    flirt.reader.empatica.read_bvp_file_into_df : reads the BVP sensor modality into a DataFrame
-    flirt.reader.empatica.read_hr_file_into_df : reads the HR sensor modality into a DataFrame
-    flirt.reader.empatica.read_temp_file_into_df : reads a temporary file sensor modality into a DataFrame
-    flirt.get_hrv_features: reads and processes data to get HRV features from HRV DataFrame
-    flirt.get_acc_features: reads and processes data to get ACC features from ACC DataFrame
-    flirt.get_eda_features : reads and processes data to get EDA features from EDA DataFrame
+    * FLIRT functions include: 
+        zip_file_path : Receive the path of the zip file containing the data to process
+        flirt.with_.empatica: reads and transforms the Empatica .zip file into features directly. 
+        Calculates features for each time window (parameter window_length), and shifts each window 
+        by the step size (parameter window_step_size)
+        flirt.reader.empatica.read_acc_file_into_df : reads the ACC sensor modality into a DataFrame
+        flirt.reader.empatica.read_ibi_file_into_df : reads the IBI sensor modality into a DataFrame
+        flirt.reader.empatica.read_eda_file_into_df : reads the EDA sensor modality into a DataFrame
+        flirt.reader.empatica.read_bvp_file_into_df : reads the BVP sensor modality into a DataFrame
+        flirt.reader.empatica.read_hr_file_into_df : reads the HR sensor modality into a DataFrame
+        flirt.reader.empatica.read_temp_file_into_df : reads a temporary file sensor modality into a DataFrame
+        flirt.get_hrv_features: reads and processes data to get HRV features from HRV DataFrame
+        flirt.get_acc_features: reads and processes data to get ACC features from ACC DataFrame
+        flirt.get_eda_features : reads and processes data to get EDA features from EDA DataFrame
+
+* devicely: a python package for reading, de-identifying and writing data from 
+    various health monitoring sensors. Designed to make reading, accessing, and 
+    sharing sensor data more convenient while maintaining privacy. See below 
+    repository instructions: 
+    https://github.com/hpi-dhc/devicely
     
+    * devicely getting started can be found here: 
+        https://hpi-dhc.github.io/devicely/examples.html#
+    * devicely can access and manipulate data for the following devices: 
+        Empatica E4
+        Spacelabs Blood Pressure Monitor
+        Bittium Faros
+        Biovotion Everion
+        Shimmer
+        Muse
+        
+        
 ### Steps to use the pipeline
 
 #### <ins> Aligning Biomedical Signals </ins>
@@ -115,6 +132,8 @@ The pipeline currently uses the following functions.
 | add_time_empatica | Add time function for empatica, used to add time for each vital sign |
 | import_json | Receive the path of json files and create a dataframe |
 | [FLIRT](https://github.com/DigitalBiomarkerDiscoveryPipeline/flirt) | a repository that assists with preprcessing data for: Empatica E4 or Holter ECGs |
+| [devicely](https://github.com/hpi-dhc/devicely) | a python package for reading, de-identifying and writing data from 
+various health monitoring sensors |
 
 
 ##### apple functions:
