@@ -183,4 +183,8 @@ various health monitoring sensors |
 
 ### Continued Development
 
+### Data type conversion functions:
+    data_conversion: with funciton used to convert the time feature in the csv file
+
+
 We are frequently updating this package with new devices and insights from the DBDP (Digital Biomarker Discovery Pipeline).
