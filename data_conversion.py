@@ -3,43 +3,61 @@ Created on 6/9/22
 
 @author: qinyuzhu
 """
-
+import flirt
 import pandas as pd
 from datetime import datetime, timedelta
 
-def type_conversion():
-     """Function that do data type conversion for time features
-    Parameters
-    ----------
-    column name of the time feature in the file as the parameter of the funtion named type_conversion
-    
-    Returns
-    -------
-    a new csv file with one new column of the converted start time
-    
-    Raises
-    ------
-    Exception
-        raise exception when the initial time (ini_time) is not set or the format of initial time is not '%b %d %Y %I:%M%p'
-        raise exception when the output csv file name is not written
-    """
-    df = pd.read_csv("")
+df = pd.read_csv("test_conversion.csv")
+print(df)
 
+lst = []
+for date in df:
+    new = datetime.strptime(date, '')
+df["new_date"] = datetime.strftime()
 
-    lst = []
-    for date in df:
-        new = datetime.strptime(date, '')
-    df["new_date"] = datetime.strftime()
+ini_time =  "Jul 17 2019 11:49AM"
 
-    ini_time =  ""
-    ini_time_for_now = datetime.strptime(ini_time, '%b %d %Y %I:%M%p')
-    
-    lst=[]
-    new_final_time = ini_time_for_now + timedelta(days=1)
-    difference = new_final_time - ini_time_for_now
-    lst.append(difference)
-    
-    lst.to_csv("")
+"""
+the functions below can be used to do data conversion of different types followed the comments
+"""
+x= ""
+base=""
+
+#Converts x to an integer. base specifies the base if x is a string.
+int(x [,base])
+#Converts x to a long integer. base specifies the base if x is a string.
+long(x[, base] )
+#Converts x to a floating-point number.
+float(x)
+# Creates a complex number.
+complex(real[, imag])
+# Converts object x to a string representation.
+str(x)
+# Converts object x to an expression string.
+repr(x)
+# Evaluates a string and returns an object.
+eval(str)
+# Converts random varaible s to a tuple.
+tuple(s)
+# Converts random variable s to a list.
+list(s)
+# Converts random varaiable s to a set.
+set(s)
+# Creates a dictionary. d must be a sequence of (key,value) tuples.
+dict(d)
+# Converts s to a frozen set.
+frozenset(s)
+# Converts an integer to a character.
+chr(x)
+# Converts an integer to a Unicode character.
+unichr(x)
+# Converts a single character to its integer value.
+ord(x)
+# Converts an integer to a hexadecimal string.
+hex(x)
+# Converts an integer to an octal string.
+oct(x)
+
 
 
 
@@ -47,4 +65,4 @@ def type_conversion():
 
 
 if __name__ == '__main__':
-    pass
+    print(df)
